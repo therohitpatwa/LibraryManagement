@@ -18,21 +18,6 @@ public abstract class LibraryItem {
     }
 
 
-
-
-    public boolean isAvailable() {
-        return (stock > 0);
-    }
-
-    public void returnItem() {
-        this.stock = this.stock + 1;
-    }
-
-    public void borrowItem() {
-        this.stock = this.stock - 1;
-
-    }
-
     public int getStock() {
         return stock;
     }
@@ -81,9 +66,27 @@ public abstract class LibraryItem {
         this.days = days;
     }
 
+
+
+    public boolean isAvailable() {
+        return (stock > 0);
+    }
+
+    public void returnItem()
+    {
+        this.stock = this.stock + 1;
+    }
+
+    public void borrowItem() {
+        this.stock = this.stock - 1;
+
+    }
+
+
+
     public abstract void getInfo();
 
-    public abstract int getLateFees(int days);
+    public abstract double getLateFees(int days);
 
 
 }

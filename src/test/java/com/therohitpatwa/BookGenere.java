@@ -1,7 +1,7 @@
 package com.therohitpatwa;
 
 public enum BookGenere {
-    FICTION("F"),NON_FICTION("NF"),PROGRAMMING("P");
+    FICTION("Fiction"),NON_FICTION("Non-Fiction"),PROGRAMMING("Programming"),BIOGRAPHY("Biography"),CLASSIC("classic"),SCIENCE("Science"),ADVENTURE("adventure");
     private String name;
     BookGenere(String name)
     {
